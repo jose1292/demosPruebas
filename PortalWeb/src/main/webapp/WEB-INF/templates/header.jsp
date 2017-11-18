@@ -35,7 +35,7 @@
 							<ul class="OpcionIngresar"
 								style="width: 244px; border-radius: 10px;">
 								<li><iframe
-										src="http://10.51.82.160:8081/portalWebPrivado/login/loginPrivate"
+										src="http://ipDeDestino/portalWebPrivado/login/loginPrivate"
 										class="miIframe"></iframe></li>
 							</ul></li>
 						<li class="logAnact2"><a id="activateId" th:href="@{'#!agenciaActivate'}">ACT&Iacute;VATE

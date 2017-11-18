@@ -18,9 +18,9 @@
 		<intercept-url pattern="/css/**" access="permitAll" />
 		<intercept-url pattern="/index.htm" access="permitAll" /> 
 		<intercept-url pattern="/secured/**" access="authenticated" />		
-        <form-login login-page="http://10.51.82.160:8081/portalWebPrivado/mediosPago/cambioNip" default-target-url="http://10.51.82.160:8081/portalWebPrivado/mediosPago/cambioNip" always-use-default-target="true" login-processing-url="/j_spring_security_check" username-parameter="j_username"
+        <form-login login-page="http://ipDeDestino/portalWebPrivado/mediosPago/cambioNip" default-target-url="http://ipDeDestino/portalWebPrivado/mediosPago/cambioNip" always-use-default-target="true" login-processing-url="/j_spring_security_check" username-parameter="j_username"
             password-parameter="j_password"  />
-		<logout invalidate-session="true" logout-success-url="http://10.51.82.160:8081/PortalWeb/inicio/" delete-cookies="JSESSIONID" logout-url="/j_spring_security_logout"/>
+		<logout invalidate-session="true" logout-success-url="http://ipDeDestino/PortalWeb/inicio/" delete-cookies="JSESSIONID" logout-url="/j_spring_security_logout"/>
         <session-management session-fixation-protection="migrateSession"></session-management>        
     </http>
 	<authentication-manager alias="authenticationManager">

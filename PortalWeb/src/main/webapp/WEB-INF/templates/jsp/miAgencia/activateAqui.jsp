@@ -21,7 +21,7 @@
 	            </tr>
 	            <tr>
 	              <td height="24">
-	              	<iframe frameborder="0" id="ifrm" onLoad="resize()" width="100%" src="http://10.51.82.68:8080/portalWebPrivado/miAgencia/activacion" ></iframe>
+	              	<iframe frameborder="0" id="ifrm" onLoad="resize()" width="100%" src="http://ipDeDestino/portalWebPrivado/miAgencia/activacion" ></iframe>
 				  </td>
 	            </tr>
 	          </tbody>

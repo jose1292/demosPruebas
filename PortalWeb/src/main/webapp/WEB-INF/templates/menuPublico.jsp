@@ -153,7 +153,7 @@
 								<a href="#" class="dropdown-toggle" data-toggle="dropdown"> INGRESAR <b class="caret"></b></a>
 								<ul class="dropdown-menu">
 									<li align="center">
-										<iframe src="http://10.51.82.68:8080/portalWebPrivado/login/loginPrivate" class="miIframe2" ></iframe>                                             
+										<iframe src="http://ipDeDestino/portalWebPrivado/login/loginPrivate" class="miIframe2" ></iframe>                                             
                                     </li>
 								</ul>
 							</li>	

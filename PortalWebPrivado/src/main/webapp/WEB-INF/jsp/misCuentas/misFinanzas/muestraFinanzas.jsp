@@ -23,7 +23,7 @@
 			</nav>
 			
 			<div align="center">
-<!--             <form  action="http://10.51.82.68:8080/portalWebPrivado/misCuentas/misFinanzas"> -->
+<!--             <form  action="http://ipDeDestino/portalWebPrivado/misCuentas/misFinanzas"> -->
 <%-- 			<form  action="<c:url value="/misCuentas/misFinanzas"/>"> --%>
             	<div align="center">
             	<p><span class="TITULO_01">Saldo</span></p>

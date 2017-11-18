@@ -99,7 +99,7 @@
 							<li class="logAnact"><a  href="javascript:vold(0)">INGRESAR </a>
 							<ul class="OpcionIngresar" style="width: 250px;">
 											<li>
-												<iframe  src="http://10.51.82.68:8080/portalWebPrivado/login.htm" class="miIframe" ></iframe>                                             
+												<iframe  src="http://ipDeDestino/portalWebPrivado/login.htm" class="miIframe" ></iframe>                                             
                                             </li>
 								</ul>
 							</li>
@@ -230,7 +230,7 @@
 								<a href="#" class="dropdown-toggle" data-toggle="dropdown"> INGRESAR <b class="caret"></b></a>
 								<ul class="dropdown-menu">
 									<li>
-										<iframe  src="http://10.51.82.68:8080/portalWebPrivado/login.htm" class="miIframe" ></iframe>                                             
+										<iframe  src="http://ipDeDestino/portalWebPrivado/login.htm" class="miIframe" ></iframe>                                             
                                     </li>
 								</ul>
 							</li>	
