@@ -57,7 +57,7 @@ public class LoginController {
 	    
 	    System.out.println("Contraseña encriptada :: " + new Cipher(pwd).toString());
 		
-	    
+//	    se comenta servicio para el paso de validacion
 //	    res = command.authenticateLdap(req);
 	    res.setStatusCode("0");
 	    res.setUserexist(true);
