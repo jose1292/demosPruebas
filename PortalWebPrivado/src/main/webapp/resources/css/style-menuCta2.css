@@ -1,0 +1,219 @@
+@CHARSET "ISO-8859-1";
+
+/* Ultimate Drop*/
+
+.ultimatedropdown {
+    border-top: solid 2px #e7eae8;
+	padding-top: 0em;
+	margin-top: 0em;
+	border-bottom: solid 2px #e7eae8;
+	padding-bottom: 0em;
+	z-index: 1000;
+	background-color: rgba(255, 255, 255, 0.95);
+	background-image: url("images/overlay.png");
+	text-align: center;
+	font-family: 'Open Sans Condensed', sans-serif;
+	font-weight: 700;
+	text-transform: uppercase;
+	cursor: default;
+}
+
+
+/* Top Level Menu */
+.ultimatedropdown ul {
+    
+    margin: 0;
+    padding: 0;
+    position: relative;    	
+	background: #fff;   
+    top: auto;
+   /* border: 1px solid #ddd;*/
+    box-shadow: 0 3px 5px #eee;
+    -webkit-transform: rotateX(-70deg);
+    transform: rotateY(25deg);
+    backface-visibility: hidden;
+    -webkit-transform-origin: 50% 0;
+    transform-origin: 50% 0;
+    -webkit-transition: opacity .3s, -webkit-transform .5s, visibility 0s .3s, left 0s .3s;
+    transition: opacity .3s, transform .5s, visibility 0s .3s, left 0s .3s;
+	
+	
+	
+}
+
+/* Top level list items */
+.ultimatedropdown ul li {
+    position: relative;
+    display: inline;
+    float: left;
+}
+
+/* Top level menu items link style */
+.ultimatedropdown ul li a, .ultimatedropdown ul li span {
+    display: block;
+    position: relative;
+    /* background of menu items (default state) */      
+    padding: 14px 10px;
+   /* border-right: 1px solid black;*/
+    color: #2d2b2b;
+    text-decoration: none;
+	/* margen de las pestañas  */
+    border-radius: 10px 10px 10px 10px;
+    background: #fff;
+    text-transform: uppercase;
+}
+
+
+.ultimatedropdown ul li a:link, .ultimatedropdown ul li a:visited {
+    color: rgb(107, 119, 112);
+}
+
+/* Top level menu items link style on hover and when active */
+.ultimatedropdown ul li:hover > a {
+    background: rgb(234, 5, 10);
+	color: white;
+}
+
+/* Sub ULs style */
+.ultimatedropdown ul li ul {
+    position: absolute;btnIngresar
+    left: -5000px;
+	top: auto;
+    opacity: 0;
+    width: 170px;
+    visibility: hidden;
+    box-shadow: 2px 2px 5px gray;
+    -webkit-transition: opacity .0s, visibility 3s .3s, left 0s .3s;
+    transition: opacity .3s, visibility 0s .3s, left 0s .3s;
+}
+
+/* First Sub Levels UL style on hover */
+.ultimatedropdown ul li:hover > ul {
+    visibility: visible;
+    left: 0;
+    opacity: 1;
+    z-index: 1000;
+    -webkit-transform: rotateX(5deg);
+    transform: rotateX(3deg);
+    -webkit-transition: opacity .5s, -webkit-transform .5s;
+    transition: opacity .5s, transform .5s;
+	
+	
+	
+	
+}
+
+/* Sub level Menu list items (alters style from Top level List Items) */
+.ultimatedropdown ul li ul li {
+    display: list-item;
+    float: none;
+}
+
+/* 2nd and beyond Sub Levels vertical offset after 1st level sub menu */
+.ultimatedropdown ul li ul li ul {
+    top: 0;
+    left: 100%;
+}
+
+/* Sub Levels link style on hover and when active */
+.ultimatedropdown ul ul li:hover > a {
+    background: rgb(234, 5, 10);
+}
+
+/* Sub Levels UL style on hover */
+.ultimatedropdown ul ul li:hover > ul {
+    left: 100%;
+}
+
+/* Sub level menu links style */
+.ultimatedropdown ul li ul li a {
+    font-family: 'Open Sans Condensed', sans-serif;
+    padding: 10px;
+    margin: 0;
+    background: #fff;
+    border-right: none;
+    border-top-width: 0;
+    /*border-bottom: 1px solid gray;*/
+}
+
+/* LIs with a sub UL style */
+.ultimatedropdown ul li > a {
+    /* add padding to accomodate arrow inside LIs */
+    padding-right: 25px;
+}
+
+/* LIs with NO sub UL style */
+.ultimatedropdown ul li > a:only-child {
+    /* undo padding for non submenu LIs */
+    padding-right: 10px;
+}
+
+/* LIs with a sub UL pseudo class */
+.ultimatedropdown ul li > a:after {
+    /* add arrow inside LIs */
+    content: "";
+    position: absolute;
+    height: 0;
+    width: 0;
+    border: 5px solid transparent;
+    border-top-color: #FFFFFF;
+    top: 50%;
+    right: 8px;
+}
+
+/* LIs with NO sub UL pseudo class */
+.ultimatedropdown ul li > a:only-child:after {
+    /* undo arrow for non submenu LIs */
+    display: none;
+}
+
+/* Sub ULs' LIs with a sub UL pseudo class */
+.ultimatedropdown ul li ul li > a:after {
+    /* change arrow to right arrow inside sub UL LIs */
+    border-top-color: transparent;
+    border-left-color: #FFFFFF;
+    top: 40%;
+    right: 8px;
+}
+
+/* ####### responsive layout CSS ####### */
+
+@media (max-width: 800px) {
+    /* FIRST breaking point
+			Last two top menu items' sub ULs should drop to the left (instead of right)
+			Change 2 to a different number to exclude/include more top menu items based on menu and max-width setting above
+		*/
+
+		.ultimatedropdown ul li:nth-last-of-type(-n+2) ul li:hover > ul {
+        left: -100%;
+    }
+}
+
+@media (max-width: 500px) {
+    /* SECOND breaking point 
+			For mobile and screen browser windows
+			Get Sub ULs to expand entire width of document and drop down
+			Changes menu reveal type from "visibility" to "display" to overcome bug. See comments below
+		*/
+
+		.ultimatedropdown ul li {
+        position: static;
+    }
+
+    .ultimatedropdown ul li ul {
+        width: 100%;
+        border-top: 2px solid #eee;
+				/* change menu reveal type from "visibility" to "display". Former seems to cause browser to jump to top of page sometimes when menu header is tapped on */
+				display: none;
+    }
+
+    .ultimatedropdown ul li:hover > ul {
+				display: block;
+        left: 0 !important;
+        top: auto;
+    }
+
+    .ultimatedropdown ul ul li:hover > ul {
+        top: auto;
+    }
+}

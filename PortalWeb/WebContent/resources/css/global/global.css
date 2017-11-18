@@ -1,0 +1,88 @@
+@import url("font-awesome.min.css");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,700,700italic|Open+Sans+Condensed:700");
+
+/* HEADER  */
+header .navbar {
+	background-color: white;
+	border: 0px;
+	text-align: center;
+	margin: 2.4%;
+	padding: 0;
+	font-size: 13px;
+}
+
+header .navbar .container-fluid{
+	margin: 0;
+	padding: 0;
+}
+
+.logoHeader{
+	background-image: url("../../../resources/imagenes/header/lineRed.jpg");
+	background-repeat: no-repeat;
+	background-position: 1%;
+	background-size: 100% auto;
+}
+
+.logoHeader  img{
+	border-top: solid 3px #c1cac5;
+	border-radius: 10px 10px 0 0;
+    margin: -5px;
+}
+
+.paisNameBox{
+	font-family: 'Open Sans Condensed', sans-serif;
+	font-weight: 700;
+	text-transform: uppercase;
+	color: #c1cac5;
+	box-sizing: border-box;
+	text-align: center;
+    border-top: solid 5px #e7eae8;
+	
+}
+
+.paisNameBox p{
+	margin: 0;
+	padding: 0;
+	text-align: center;
+    font-size: 3em;
+}
+/* HEADER  */
+
+/****************************************************************************************************/
+
+
+/** FOOTER **/
+#footer {	   
+	width: 100%;
+    margin: 2% 0 0 0;
+    text-align: center;
+    padding: 4% 0% 7% 0%;
+	background: #f2f5f3;
+	border-top: solid 7px #8b9790;  /*#c00105  -Z> rojo*/
+}
+
+#footer a {
+	color: inherit;
+}
+
+/** COPYRIGHT **/
+#copyright {
+	display: inline-block;
+	background: #e7eae8;
+	padding: 0.3em 2em 0.3em 2em;
+	border-radius: 8px;
+	color: #8b9790;
+	margin: 0.5em 0 0 0;
+}
+/** FOOTER **/
+
+
+/** Iframe **/
+.miIframe{
+	scrolling=no;
+	width:250px;	 
+	height:205px;
+	border-radius: 10px;
+}
+
+/****************************************************************************************************/
